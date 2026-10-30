@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="230" viewBox="0 0 830 230" role="img" aria-label="留白">
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="230" viewBox="0 0 830 230" role="img" aria-label="Hi, I'm 留白">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#070b1e"/>
@@ -6,13 +6,13 @@
       <stop offset="78%" stop-color="#241452"/>
       <stop offset="100%" stop-color="#3a1257"/>
     </linearGradient>
-    <radialGradient id="pinkGlow" cx="0.78" cy="0.28" r="0.62">
-      <stop offset="0" stop-color="#f472b6" stop-opacity="0.38"/>
-      <stop offset="55%" stop-color="#a855f7" stop-opacity="0.14"/>
+    <radialGradient id="pinkGlow" cx="0.78" cy="0.24" r="0.62">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.36"/>
+      <stop offset="55%" stop-color="#a855f7" stop-opacity="0.13"/>
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="blueGlow" cx="0.1" cy="0.9" r="0.7">
-      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.30"/>
+    <radialGradient id="blueGlow" cx="0.08" cy="1" r="0.75">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.32"/>
       <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
 
@@ -28,7 +28,6 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- 叠层：从深蓝升到粉 -->
     <linearGradient id="p0" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#2b3a86"/><stop offset="100%" stop-color="#1a2358"/>
     </linearGradient>
@@ -44,12 +43,18 @@
     <linearGradient id="p4" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fda4d6"/><stop offset="100%" stop-color="#c15fc0"/>
     </linearGradient>
+    <linearGradient id="floorFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fa0ff" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="lineA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#67e8f9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0.3"/>
+    </linearGradient>
 
     <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="12"/>
-    </filter>
-    <filter id="tiny" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="6"/>
     </filter>
 
     <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
@@ -57,8 +62,8 @@
     </pattern>
     <clipPath id="card"><rect width="830" height="230" rx="14"/></clipPath>
     <clipPath id="nameClip">
-      <text x="52" y="112" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
-            font-size="52" font-weight="700" letter-spacing="8">留白</text>
+      <text x="52" y="128" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
+            font-size="54" font-weight="700" letter-spacing="8">留白</text>
     </clipPath>
   </defs>
 
@@ -68,59 +73,59 @@
     <rect width="830" height="230" fill="url(#blueGlow)"/>
     <rect width="830" height="230" fill="url(#grid)"/>
 
-    <!-- 装饰：等轴测叠层，慢慢漂浮 -->
+    <!-- 底层留空给 3D 叠层，不放任何线条 -->
+
+    <!-- 右侧：等轴测叠层，像立在地面上 -->
     <g>
-      <ellipse cx="700" cy="176" rx="88" ry="16" fill="#f472b6" opacity="0.20" filter="url(#soft)"/>
+      <ellipse cx="700" cy="170" rx="86" ry="14" fill="#f472b6" opacity="0.22" filter="url(#soft)"/>
       <g>
         <animateTransform attributeName="transform" type="translate" values="0 4; 0 -6; 0 4" dur="6s" repeatCount="indefinite"/>
 
-        <polygon points="630,150 700,115 770,150 700,185" fill="url(#p0)" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1">
+        <polygon points="640,142 700,112 760,142 700,172" fill="url(#p0)" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1">
           <animateTransform attributeName="transform" type="translate" values="0 1; 0 -1; 0 1" dur="4.2s" repeatCount="indefinite"/>
         </polygon>
-        <polygon points="630,138 700,103 770,138 700,173" fill="url(#p1)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+        <polygon points="640,132 700,102 760,132 700,162" fill="url(#p1)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
           <animateTransform attributeName="transform" type="translate" values="0 -1; 0 1; 0 -1" dur="4.8s" repeatCount="indefinite"/>
         </polygon>
-        <polygon points="630,126 700,91 770,126 700,161" fill="url(#p2)" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1">
+        <polygon points="640,122 700,92 760,122 700,152" fill="url(#p2)" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1">
           <animateTransform attributeName="transform" type="translate" values="0 1.5; 0 -1.5; 0 1.5" dur="3.8s" repeatCount="indefinite"/>
         </polygon>
-        <polygon points="630,114 700,79 770,114 700,149" fill="url(#p3)" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1">
+        <polygon points="640,112 700,82 760,112 700,142" fill="url(#p3)" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1">
           <animateTransform attributeName="transform" type="translate" values="0 -1.5; 0 1.5; 0 -1.5" dur="5.4s" repeatCount="indefinite"/>
         </polygon>
-        <polygon points="630,102 700,67 770,102 700,137" fill="url(#p4)" stroke="#ffffff" stroke-opacity="0.30" stroke-width="1">
+        <polygon points="640,102 700,72 760,102 700,132" fill="url(#p4)" stroke="#ffffff" stroke-opacity="0.30" stroke-width="1">
           <animateTransform attributeName="transform" type="translate" values="0 2; 0 -2; 0 2" dur="4.6s" repeatCount="indefinite"/>
         </polygon>
       </g>
 
-      <!-- 旁边一颗小方块，慢慢上下 -->
-      <g opacity="0.9">
-        <polygon points="586,96 600,89 614,96 600,103" fill="#8fa0ff" opacity="0.6">
-          <animateTransform attributeName="transform" type="translate" values="0 -3; 0 3; 0 -3" dur="5.2s" repeatCount="indefinite"/>
-        </polygon>
-        <polygon points="566,142 574,138 582,142 574,146" fill="#f9a8d4" opacity="0.7">
-          <animateTransform attributeName="transform" type="translate" values="0 3; 0 -3; 0 3" dur="6.4s" repeatCount="indefinite"/>
-        </polygon>
-      </g>
+      <!-- 两颗悬着的小方块 -->
+      <polygon points="586,96 600,89 614,96 600,103" fill="#8fa0ff" opacity="0.55">
+        <animateTransform attributeName="transform" type="translate" values="0 -3; 0 3; 0 -3" dur="5.2s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="572,132 580,128 588,132 580,136" fill="#f9a8d4" opacity="0.65">
+        <animateTransform attributeName="transform" type="translate" values="0 3; 0 -3; 0 3" dur="6.4s" repeatCount="indefinite"/>
+      </polygon>
     </g>
 
-    <!-- 名字 + 扫光 -->
-    <text x="52" y="112" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
-          font-size="52" font-weight="700" letter-spacing="8" fill="url(#nameGrad)">留白</text>
+    <!-- 文字 -->
+    <text x="54" y="76" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="1.2" fill="#9aa6d6">Hi, I'm</text>
+    <text x="52" y="128" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
+          font-size="54" font-weight="700" letter-spacing="8" fill="url(#nameGrad)">留白</text>
     <g clip-path="url(#nameClip)">
-      <rect x="-240" y="40" width="240" height="110" fill="url(#shine)" opacity="0.85">
+      <rect x="-240" y="56" width="240" height="110" fill="url(#shine)" opacity="0.85">
         <animate attributeName="x" from="-240" to="880" dur="6s" repeatCount="indefinite"/>
       </rect>
     </g>
-
-    <text x="54" y="150" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="11" letter-spacing="4.4" fill="#8b8fc0">LIUBAI</text>
+    <text x="54" y="156" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="4.4" fill="#8b8fc0">LIUBAI</text>
 
     <!-- 状态灯 -->
-    <circle cx="750" cy="40" r="4" fill="#f472b6">
+    <circle cx="750" cy="36" r="4" fill="#f472b6">
       <animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="750" cy="40" r="4" fill="none" stroke="#f472b6" stroke-width="1">
+    <circle cx="750" cy="36" r="4" fill="none" stroke="#f472b6" stroke-width="1">
       <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;0;0.6" dur="2.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="762" y="44" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="2" fill="#8b8fc0">ONLINE</text>
+    <text x="762" y="40" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="2" fill="#8b8fc0">ONLINE</text>
   </g>
 </svg>
