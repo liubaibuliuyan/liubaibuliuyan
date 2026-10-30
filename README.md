@@ -1,71 +1,47 @@
-<a href="https://liubaibuliuyan.github.io">
-  <img src="./assets/banner.png" width="100%" alt="liubaibuliuyan — engineering log" />
-</a>
+<p align="center">
+  <img src="./assets/banner-light.png#gh-light-mode-only" width="100%" alt="liubaibuliuyan — engineering log">
+  <img src="./assets/banner-dark.png#gh-dark-mode-only" width="100%" alt="liubaibuliuyan — engineering log">
+</p>
 
-<br>
+我做系统，也把「它为什么成立」写清楚。
 
-**这里是我的可验证工程记录**——每个项目都写清问题、约束、方案和结果。
-复盘先写，代码整理好再放出，所以「已开源」的数量会落后于「做过」的数量。
-
-> 📐 完整版主页 → <https://liubaibuliuyan.github.io>
-> 项目复盘 · 技术笔记 · 简历（简历页可直接浏览器打印成 PDF）
-
-```text
-STATUS
-  site         liubaibuliuyan.github.io
-  write-ups    0 published
-  repos        2 (profile + site)
-  currently    整理已有项目 -> 写复盘 -> 放出代码
-  contact      via GitHub issue / DM
-```
+每条记录都走同一个结构：**问题 → 约束 → 方案 → 结果**。结果必须带数字，带不出数字的就不发出来 ——
+所以这里的条目少，但每一条都能被验证。
 
 ---
 
-## `01` 当前在做
+## `01` NOW — 现在在做
 
 | | |
 | :-- | :-- |
-| **主线** | 把手上的项目逐个写成公开复盘，每篇必须给出可量化结果 |
-| **规则** | 没有数字的结果不写成文章；讲不清约束的方案不算做完 |
-| **节奏** | 复盘先行。代码仓库等整理干净再推，不为了绿格子制造空提交 |
+| **在做** | 把手上的项目逐个写成公开复盘，写完一篇放一篇 |
+| **节奏** | 复盘先行。代码仓库等自己愿意 review 了再公开，不为了绿格子制造提交 |
+| **怎么看** | 直接看 `02` 的「结果」列 —— 那一列决定一条记录值不值得读 |
 
-## `02` 项目复盘
-
-完整列表在主页的 [项目页](https://liubaibuliuyan.github.io/projects)。这里只放**已开源**的仓库。
+## `02` WRITE-UPS — 项目复盘
 
 | # | 项目 | 问题 | 结果 |
 | :-- | :-- | :-- | :-- |
-| — | 暂无公开条目 | 复盘会先出现在主页，代码链接随后补上 | — |
+| 01 | [个人主页系统](https://github.com/liubaibuliuyan/liubaibuliuyan) | 主页容易做成贴纸堆：技术栈徽章 + 会过期的统计数字，看不出一个人到底怎么工作 | 视觉全部由 [`tools/build-assets.py`](./tools/build-assets.py) 按字体度量生成 · 亮/暗双主题 4 张图 · 页面运行时 JS **0** 行 |
 
-<!-- 公开仓库后按这个格式加行，一行一个，结果必须带数字：
-| 01 | [名字](链接) | 一句话说清什么坏了 | 4.2k QPS / 脏读 0 次 |
--->
+复盘先写，代码链接随后补上。**「已公开」的数量落后于「做过」的数量，是这里的规则，不是缺陷。**
 
-## `03` 技术栈
+## `03` METHOD — 工作方法
 
 <details>
-<summary><b>展开查看</b>（只列真的用来交付过的，不放只会 tutorial 的）</summary>
+<summary><b>一条记录要过哪四道关</b></summary>
 
-| 方向 | 明细 |
-| :-- | :-- |
-| **语言** | 待填 |
-| **系统** | 待填 |
-| **工具** | 待填 |
+| 环节 | 必须回答的问题 | 过不了关的样子 |
+| :-- | :-- | :-- |
+| **问题** | 什么坏了，谁在受影响 | "优化了性能" |
+| **约束** | 时间、资源、不能动的边界 | 只写最终方案，看不出取舍 |
+| **方案** | 为什么是它，放弃了哪几个 | 罗列技术名词，不谈选择 |
+| **结果** | 数字、怎么测的、能否复现 | "效果显著" |
 
 </details>
 
-## `04` 关于这个页面
-
-主页是 Astro 静态站，内容全部是 Markdown 文件，push 到 `main` 由 GitHub Actions 自动构建部署。
-源码公开，欢迎当模板用：[liubaibuliuyan.github.io](https://github.com/liubaibuliuyan/liubaibuliuyan.github.io)
-
-```text
-STACK     Astro 7  ·  GitHub Pages  ·  Actions
-CONTENT   projects / writing 两个 Markdown 集合
-GUARD     result 字段缺失 -> 构建直接失败
-JS        首页除主题切换外零运行时
-```
+> 讲不清约束的方案，不算做完；给不出数字的结果，不算结论。
 
 ---
 
-> 📮 联系方式暂未公开 —— 有招聘或合作意向，直接通过 GitHub 找我最快。
+**联系方式** — 招聘或合作意向，直接开 issue 或 DM 最快：[@liubaibuliuyan](https://github.com/liubaibuliuyan)
