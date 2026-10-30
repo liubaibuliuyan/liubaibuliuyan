@@ -16,9 +16,3 @@
 <p align="center">
   <img src="assets/langs.svg" width="830" alt="GitHub overview">
 </p>
-
-<br>
-
-<p align="center">
-  <img src="assets/strip.svg" width="830" alt="">
-</p>
