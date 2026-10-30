@@ -23,16 +23,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=liubaibuliuyan&layout=compact&theme=tokyonight&hide_border=true&title_color=ff7eb3&text_color=a0a0b0" width="40%" />
 </p>
 
-<h3 align="center">✨ 技术栈</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,linux,bash,git,github,arduino,raspberrypi,vscode,cmake&theme=dark" />
-</p>
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/liubaibuliuyan" width="80%" />
-</p>
-
 <br>
 
 ![](assets/Bottom_down.svg)
