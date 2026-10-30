@@ -17,16 +17,20 @@
 
 做嵌入式底层：实时调度、运动控制、电机总线。喜欢把系统收干净，让上电之后的行为可预测。如果你也在做这类东西，欢迎来聊。
 
-<br>
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=liubaibuliuyan&show_icons=true&theme=tokyonight&hide_border=true&title_color=ff7eb3&icon_color=ff758c&text_color=a0a0b0&ring_color=ff7eb3&rank_icon=github" width="48%" />
   &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=liubaibuliuyan&layout=compact&theme=tokyonight&hide_border=true&title_color=ff7eb3&text_color=a0a0b0" width="40%" />
 </p>
 
+<h3 align="center">✨ 技术栈</h3>
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=c,cpp,python,linux,bash,git,github,arduino,raspberrypi,vscode,cmake&theme=dark" />
+</p>
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/liubaibuliuyan" width="80%" />
 </p>
 
 <br>
