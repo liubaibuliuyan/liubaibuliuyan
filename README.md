@@ -16,7 +16,3 @@
 <p align="center">
   <img src="assets/langs.svg" width="830" alt="GitHub overview">
 </p>
-
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" width="830" alt="3D contribution graph">
-</p>
