@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="230" viewBox="0 0 830 230" role="img" aria-label="Most used languages">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#141c24"/>
+    </linearGradient>
+    <pattern id="grid2" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.03"/>
+    </pattern>
+    <clipPath id="card2"><rect width="830" height="230" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card2)">
+    <rect width="830" height="230" fill="url(#bg2)"/>
+    <rect width="830" height="230" fill="url(#grid2)"/>
+
+    <text x="48" y="52" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="3" fill="#6e7b88">MOST USED LANGUAGES</text>
+
+    <g>
+      <rect x="48"  y="70" width="313" height="8" rx="4" fill="#ff5d01"/>
+      <rect x="363" y="70" width="263" height="8" rx="4" fill="#663399"/>
+      <rect x="628" y="70" width="85"  height="8" rx="4" fill="#3572a5"/>
+      <rect x="715" y="70" width="59"  height="8" rx="4" fill="#3178c6"/>
+      <rect x="776" y="70" width="6"   height="8" rx="3" fill="#f1e05a"/>
+    </g>
+
+    <g font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="14" fill="#c9d3dc">
+      <circle cx="52" cy="116" r="5" fill="#ff5d01"/>
+      <text x="68" y="121">Astro</text>
+      <text x="330" y="121" text-anchor="end" fill="#7d8792" font-size="13">43.2%</text>
+
+      <circle cx="52" cy="146" r="5" fill="#663399"/>
+      <text x="68" y="151">CSS</text>
+      <text x="330" y="151" text-anchor="end" fill="#7d8792" font-size="13">36.2%</text>
+
+      <circle cx="52" cy="176" r="5" fill="#3572a5"/>
+      <text x="68" y="181">Python</text>
+      <text x="330" y="181" text-anchor="end" fill="#7d8792" font-size="13">11.7%</text>
+
+      <circle cx="434" cy="116" r="5" fill="#3178c6"/>
+      <text x="450" y="121">TypeScript</text>
+      <text x="712" y="121" text-anchor="end" fill="#7d8792" font-size="13">8.2%</text>
+
+      <circle cx="434" cy="146" r="5" fill="#f1e05a"/>
+      <text x="450" y="151">JavaScript</text>
+      <text x="712" y="151" text-anchor="end" fill="#7d8792" font-size="13">0.7%</text>
+    </g>
+
+    <line x1="48" y1="200" x2="782" y2="200" stroke="#ffffff" stroke-width="1" opacity="0.07"/>
+    <text x="48" y="219" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10" letter-spacing="2" fill="#4b5563">2 REPOSITORIES · 13 CONTRIBUTIONS · SINCE 2025</text>
+  </g>
+</svg>
