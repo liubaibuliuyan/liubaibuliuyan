@@ -18,5 +18,5 @@
 </p>
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/liubaibuliuyan" width="830" alt="Contribution chart">
+  <img src="./profile-3d-contrib/profile-night-green.svg" width="830" alt="3D contribution graph">
 </p>

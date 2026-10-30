@@ -7,26 +7,49 @@
     <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
       <path d="M22 0H0V22" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
     </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.2"/>
+      <stop offset="30%" stop-color="#86efac" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="bloom" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
     <clipPath id="card">
       <rect width="830" height="230" rx="14"/>
     </clipPath>
+    <path id="trace" d="M-20 176 C20 176 20 152 60 152 S100 200 140 200 S180 160 220 160 S260 192 300 192 S340 176 380 176 S420 148 460 148 S500 198 540 198 S580 158 620 158 S660 186 700 186 S760 176 810 176"/>
   </defs>
 
   <g clip-path="url(#card)">
     <rect width="830" height="230" fill="url(#bg)"/>
     <rect width="830" height="230" fill="url(#grid)"/>
 
-    <path d="M0 176 C40 176 40 152 80 152 S120 200 160 200 S200 160 240 160 S280 192 320 192 S360 176 400 176 S440 148 480 148 S520 198 560 198 S600 158 640 158 S680 186 720 186 S780 176 830 176"
-          fill="none" stroke="#4ade80" stroke-width="1.6" opacity="0.55"/>
-    <path d="M0 176 C40 176 40 152 80 152 S120 200 160 200 S200 160 240 160 S280 192 320 192 S360 176 400 176 S440 148 480 148 S520 198 560 198 S600 158 640 158 S680 186 720 186 S780 176 830 176"
-          fill="none" stroke="#86efac" stroke-width="2.4" stroke-dasharray="66 900" opacity="0.9">
-      <animate attributeName="stroke-dashoffset" from="830" to="0" dur="6.5s" repeatCount="indefinite"/>
-    </path>
+    <!-- 底噪：静止的轨迹 -->
+    <use href="#trace" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.10"/>
+    <use href="#trace" fill="none" stroke="#4ade80" stroke-width="1.4" opacity="0.26"/>
+
+    <!-- 流动的高亮段：模糊层做辉光，实线层做本体 -->
+    <use href="#trace" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round"
+         stroke-dasharray="150 950" filter="url(#bloom)" opacity="0.45">
+      <animate attributeName="stroke-dashoffset" from="1100" to="0" dur="7s" repeatCount="indefinite"/>
+    </use>
+    <use href="#trace" fill="none" stroke="url(#fade)" stroke-width="1.8" stroke-linecap="round"
+         stroke-dasharray="150 950">
+      <animate attributeName="stroke-dashoffset" from="1100" to="0" dur="7s" repeatCount="indefinite"/>
+    </use>
 
     <text x="48" y="106" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="42" font-weight="700" letter-spacing="6" fill="#e6edf3">留白</text>
     <text x="50" y="136" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="11" letter-spacing="4.2" fill="#6e7b88">LIUBAI</text>
 
-    <circle cx="750" cy="52" r="4" fill="#4ade80"/>
+    <!-- 状态灯：呼吸 -->
+    <circle cx="750" cy="52" r="4" fill="#4ade80">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="52" r="4" fill="none" stroke="#4ade80" stroke-width="1">
+      <animate attributeName="r" values="4;9;4" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;0;0.55" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
     <text x="762" y="56" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="2" fill="#7d8792">ONLINE</text>
     <text x="782" y="86" text-anchor="end" font-family="ui-monospace,Consolas,Menlo,monospace" font-size="10.5" letter-spacing="2" fill="#4b5563">0x01</text>
   </g>
