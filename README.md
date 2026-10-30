@@ -14,13 +14,9 @@
 欢迎来到我的主页，随便看看。有事直接发邮件，一般都会回。
 
 <p align="center">
-  <img src="assets/langs.svg" width="830" alt="Most used languages">
+  <img src="assets/langs.svg" width="830" alt="GitHub overview">
 </p>
 
 <p align="center">
   <img src="https://ghchart.rshah.org/liubaibuliuyan" width="830" alt="Contribution chart">
 </p>
-
-<br>
-
-![](assets/bottom.svg)
